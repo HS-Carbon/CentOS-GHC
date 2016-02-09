@@ -1,7 +1,7 @@
 yum install tar bzip2 wget which -y
 cd /tmp
 wget -nv https://downloads.haskell.org/~ghc/7.10.3/ghc-7.10.3-$(uname -m)-centos67-linux.tar.bz2
-yum install gcc perl -y
+yum install gcc glibc-static perl -y
 tar -xf ghc-7.10.3-$(uname -m)-centos67-linux.tar.bz2
 cd ghc-7.10.3
 ./configure && make install
